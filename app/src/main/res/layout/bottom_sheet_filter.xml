@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_acc_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/ic_right_arrow"
+        android:drawableRight="@drawable/ic_right_arrow"
+        android:gravity="center_vertical"
+        android:text="@string/select_account_number"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_brand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/ic_right_arrow"
+        android:drawableRight="@drawable/ic_right_arrow"
+        android:gravity="center_vertical"
+        android:text="@string/select_brand"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_acc_no" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/ic_right_arrow"
+        android:drawableRight="@drawable/ic_right_arrow"
+        android:gravity="center_vertical"
+        android:text="@string/select_location"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_brand" />
+</androidx.constraintlayout.widget.ConstraintLayout>

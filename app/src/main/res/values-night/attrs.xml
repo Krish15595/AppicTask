@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <attr format="color" name="dotsColor" tools:ignore="MissingDefaultResource" />
+    <attr format="color" name="selectedDotColor" tools:ignore="MissingDefaultResource" />
+    <attr format="color" name="dotsStrokeColor" tools:ignore="MissingDefaultResource" />
+    <attr format="dimension" name="dotsSize" tools:ignore="MissingDefaultResource" />
+    <attr format="float" name="dotsWidthFactor" tools:ignore="MissingDefaultResource" />
+    <attr format="dimension" name="dotsSpacing" tools:ignore="MissingDefaultResource" />
+    <attr format="dimension" name="dotsCornerRadius" tools:ignore="MissingDefaultResource" />
+    <attr format="dimension" name="dotsStrokeWidth" tools:ignore="MissingDefaultResource" />
+    <attr format="float" name="stiffness" tools:ignore="MissingDefaultResource" />
+    <attr format="float" name="dampingRatio" tools:ignore="MissingDefaultResource" />
+    <attr format="boolean" name="progressMode" tools:ignore="MissingDefaultResource" />
+
+    <declare-styleable name="DotsIndicator">
+        <attr name="dotsColor"/>
+        <attr name="selectedDotColor"/>
+        <attr name="dotsSize"/>
+        <attr name="dotsWidthFactor"/>
+        <attr name="dotsSpacing"/>
+        <attr name="dotsCornerRadius"/>
+        <attr name="progressMode"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="SpringDotsIndicator">
+        <attr name="dotsColor"/>
+        <attr name="dotsSize"/>
+        <attr name="dotsSpacing"/>
+        <attr name="dotsCornerRadius"/>
+        <attr name="dotsStrokeWidth"/>
+        <attr name="dotsStrokeColor"/>
+        <attr name="stiffness"/>
+        <attr name="dampingRatio"/>
+    </declare-styleable>
+
+    <declare-styleable name="WormDotsIndicator">
+        <attr name="dotsColor"/>
+        <attr name="dotsSize"/>
+        <attr name="dotsSpacing"/>
+        <attr name="dotsCornerRadius"/>
+        <attr name="dotsStrokeWidth"/>
+        <attr name="dotsStrokeColor"/>
+    </declare-styleable>
+</resources>

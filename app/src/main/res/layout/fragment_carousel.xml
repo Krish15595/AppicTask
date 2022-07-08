@@ -1,0 +1,70 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.carousel.PlaceholderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivImg"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:adjustViewBounds="true"
+            android:padding="20dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/ivImg"
+            android:layout_weight="4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivImg">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Select the task"
+                android:textColor="@color/colorPrimary"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/tvSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitle"
+                android:layout_margin="15dp"
+                android:layout_toRightOf="@+id/line"
+                android:fontFamily="sans-serif-light"
+                android:lineSpacingExtra="7dp"
+                android:paddingRight="30dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                android:textColor="#706E6E"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tvSubTitle"
+                android:layout_alignBottom="@id/tvSubTitle"
+                android:layout_marginLeft="15dp"
+                android:background="@color/colorPrimary" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
